@@ -2,7 +2,6 @@ import axios from "axios";
 
 import {containsKey} from "./CommonUtilities.js";
 
-
 function APICall ( baseURI = null , otherUriParams = [], headersObj = {} ) {
 
     if( baseURI !== null && baseURI !== "" && ( containsKey( "key", otherUriParams ) || containsKey( "appid", otherUriParams ))  === false ){
